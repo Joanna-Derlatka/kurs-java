@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Tydzień_2 {
-    Scanner scanner = new Scanner(System.in);
 
 public static void main(String[] args)
 {
@@ -10,8 +9,7 @@ public static void main(String[] args)
     // zadanie3();
     // zadanie4();
     // zadanie5();
-    zadanie6();
-
+    // zadanie6();
 }
 
     public static void zadanie1()
@@ -40,10 +38,10 @@ public static void main(String[] args)
 
         System.out.println("Podaj temperaturę w stopniach Celsjusza: ");
         float stopnieC1 = scanner.nextFloat();
-        float stopnieF1 = (float)stopnieC1 * 9 / 5 + 32;
+        float stopnieF1 = stopnieC1 * 9 / 5 + 32;
         System.out.println("Stopnie Celsjusza " + stopnieC1 + ", stopnie Fahrenheita " + stopnieF1);
-
     }
+
     public static void zadanie3()
     {
         // Przeliczanie stopni fahrenheita na celcjusza
@@ -52,9 +50,8 @@ public static void main(String[] args)
 
         System.out.println("Podaj temperaturę w stopniach Fahrenheita: ");
         float stopnieF2 = scanner.nextFloat();
-        float stopnieC2 = ((float)stopnieF2 -32) * 5 / 9;
+        float stopnieC2 = (stopnieF2 -32) * 5 / 9;
         System.out.println("Stopnie Celsjusza " + stopnieC2 + ", stopnie Fahrenheita " + stopnieF2);
-
     }
 
     public static void zadanie4()
@@ -69,7 +66,6 @@ public static void main(String[] args)
         float przyp2 = scanner.nextFloat();
         double przep = Math.sqrt(przyp1 * przyp1 + przyp2 * przyp2);
         System.out.println("Długość boku przciwprostokątnej to: " + przep);
-
     }
 
     public static void zadanie5()
@@ -84,7 +80,6 @@ public static void main(String[] args)
         float wzrost = scanner.nextFloat();
         double bmi = masa / (wzrost * wzrost);
         System.out.println("BMI: " + bmi);
-
     }
 
     public static void zadanie6()
@@ -102,9 +97,8 @@ public static void main(String[] args)
         float m2 = scanner.nextFloat();
         System.out.println("Podaj prędkość drugiego pojazdu w km/h: ");
         float prędkość2 = scanner.nextFloat();
-        double a2 = prędkość1 / 3.6;
+        double a2 = prędkość2 / 3.6;
         double f = (m1 * a1) + (m2 * a2);
         System.out.println("Siła zderzenia to: " + f + "N");
-
     }
 }
